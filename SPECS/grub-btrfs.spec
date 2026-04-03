@@ -1,14 +1,13 @@
 %global debug_package %{nil}
 %global _default_patch_fuzz 1
 Name:           grub-btrfs
-Version:        4.13
+Version:        4.14
 Release:	0
 Summary:	Automatically add snapshots to your grub entry
 License:	GPLv3
 URL:		https://github.com/Antynea/grub-btrfs
-Source:		https://github.com/Antynea/%{name}/archive/refs/tags/%{version}.tar.gz
-Patch0: 0000-add-luks-support.patch
-Patch1: 0001-remove-root-requirement.patch
+Source:		https://github.com/Antynea/%{name}/archive/refs/tags/v%{version}.tar.gz
+Patch0: 0000-remove-root-requirement.patch
 Prefix:		%{_prefix}
 Packager:	Samuel Coles
 BuildRoot:	%{_tmppath}/%{name}-root
@@ -20,7 +19,6 @@ A utility to update grub with btrfs snapshots for easy rollback.
 
 %setup %{name}-%{version} 
 %patch -P 0 -p1
-%patch -P 1 -p1
 
 %install
 
