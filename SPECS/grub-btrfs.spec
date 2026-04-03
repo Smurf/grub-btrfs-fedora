@@ -11,7 +11,7 @@ Patch0: 0000-remove-root-requirement.patch
 Prefix:		%{_prefix}
 Packager:	Samuel Coles
 BuildRoot:	%{_tmppath}/%{name}-root
-
+BuildRequires:  make
 %description
 A utility to update grub with btrfs snapshots for easy rollback.
 
