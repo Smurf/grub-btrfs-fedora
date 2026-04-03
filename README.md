@@ -5,3 +5,7 @@ For more information see: https://github.com/Antynea/grub-btrfs
 ## Building
 
 First pull the sources with `pull-sources.sh` then `rpmbuild -ba SPECS/grub-btrfs.spec`
+
+## Copr Repository
+
+These packages are available via the [smurf/grub-btrfs](https://copr.fedorainfracloud.org/coprs/smurf/grub-btrfs/) copr repository.
