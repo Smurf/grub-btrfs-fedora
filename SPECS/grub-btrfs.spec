@@ -8,6 +8,7 @@ License:	GPLv3
 URL:		https://github.com/Antynea/grub-btrfs
 Source:		https://github.com/Antynea/%{name}/archive/refs/tags/v%{version}.tar.gz
 Patch0: 0000-remove-root-requirement.patch
+Patch1: 0001-Fix-paths-for-fedora.patch
 Prefix:		%{_prefix}
 Packager:	Samuel Coles
 BuildRoot:	%{_tmppath}/%{name}-root
@@ -19,6 +20,7 @@ A utility to update grub with btrfs snapshots for easy rollback.
 
 %setup %{name}-%{version} 
 %patch -P 0 -p1
+%patch -P 1 -p1
 
 %install
 

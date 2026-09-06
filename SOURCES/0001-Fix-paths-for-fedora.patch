@@ -1,0 +1,25 @@
+diff --git a/config b/config
+index 9f8d582..8642626 100644
+--- a/config
++++ b/config
+@@ -100,7 +100,7 @@ GRUB_BTRFS_IGNORE_PREFIX_PATH=("var/lib/docker" "@var/lib/docker" "@/var/lib/doc
+ # Location of the folder containing the "grub.cfg" file.
+ # Might be grub2 on some systems.
+ # Default: "/boot/grub"
+-#GRUB_BTRFS_GRUB_DIRNAME="/boot/grub2"
++GRUB_BTRFS_GRUB_DIRNAME="/boot/grub2"
+ 
+ # Location of kernels/initramfs/microcode.
+ # Use by "grub-btrfs" to detect the boot partition and the location of kernels/initrafms/microcodes.
+@@ -132,7 +132,7 @@ GRUB_BTRFS_IGNORE_PREFIX_PATH=("var/lib/docker" "@var/lib/docker" "@/var/lib/doc
+ # For example, on Fedora : "/sbin/grub2-mkconfig"
+ # You can use only name or full path.
+ # Default: grub-mkconfig
+-#GRUB_BTRFS_MKCONFIG=/usr/bin/grub2-mkconfig
++GRUB_BTRFS_MKCONFIG=/usr/bin/grub2-mkconfig
+ 
+ # Name of grub-script-check command, use by "grub-btrfs"
+ # Might be 'grub2-script-check' on some systems (Fedora ...)
+-- 
+2.55.0
+
